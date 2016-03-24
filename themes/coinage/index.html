@@ -1,9 +1,276 @@
----
-layout:                 application.coinage
-title:                  Blinktrade demo exchange
-body_classes:           ws-not-connected bitex-not-logged active-view-start
-load_application:       True
----
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title> Bitinvest - Bitcoin rápido, fácil e seguro - Comprar e Vender Bitcoin com as menores taxas do Brasil </title>
+
+  <!-- Meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="BlinkTrade">
+
+  
+  
+  <meta name="description" content="Bitinvest - Bitcoin rápido, fácil e seguro - Comprar e Vender Bitcoin com as menores taxas do Brasil">
+  <meta name="keywords" content="Bitinvest - Bitcoin rápido, fácil e seguro - Comprar e Vender Bitcoin com as menores taxas do Brasil">
+  <meta property="og:title" content="Bitinvest - Bitcoin rápido, fácil e seguro - Comprar e Vender Bitcoin com as menores taxas do Brasil">
+  <meta property="og:description" content="Bitinvest - Bitcoin rápido, fácil e seguro - Comprar e Vender Bitcoin com as menores taxas do Brasil">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yuanbitcoin.github.io//themes/coinage/index.html">
+  <meta property="og:image" content="https://yuanbitcoin.github.io//assets/exchange_logos/bitinvest_social_network_share.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yuanbitcoin.github.io//themes/coinage/index.html">
+  <meta property="og:image" content="https://yuanbitcoin.github.io//assets/exchange_logos/bitinvest_social_network_share.png">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="//assets/exchange_logos/bitinvest_favicon.ico">
+  <link rel="icon" href="//assets/exchange_logos/bitinvest_favicon.ico" type="image/x-icon">
+
+  <!-- Feed -->
+  <link rel="alternate" type="application/rss+xml" href="https://yuanbitcoin.github.io//feed.xml">
+
+  <meta charset="utf-8">
+
+  <link rel="canonical" href="https://yuanbitcoin.github.io//themes/coinage/index.html"/>
+  <script type="text/javascript" src="//apis.google.com/js/plusone.js"></script>
+
+  
+  <link href="https://yuanbitcoin.github.io//assets/themes/default/css/style-new.css?v=d5fcf02" rel="stylesheet">
+  <link href="https://yuanbitcoin.github.io//assets/css/flag-icon.css" rel="stylesheet">
+
+  
+    <link href="https://yuanbitcoin.github.io//assets/themes/coinage/sass/main.blue.css?v=d5fcf02" rel="stylesheet">
+  
+
+  <link rel="stylesheet" href="https://yuanbitcoin.github.io//assets/themes/coinage/css/font-awesome.min.css">
+  <script data-cfasync="false" src="https://yuanbitcoin.github.io//assets/js/bitex_app_blink_trade.compiled.zn_CN.coinage.js?v=d5fcf02" type="text/javascript"></script>
+  <script src="https://yuanbitcoin.github.io//assets/themes/coinage/javascript/jquery-1.12.0.min.js"></script>
+  <script src="https://yuanbitcoin.github.io//assets/themes/coinage/javascript/bootstrap.min.js"></script>
+  <script src="https://yuanbitcoin.github.io//assets/js/externs/qrcode.min.js"></script>
+  
+</head>
+<body class=" ws-not-connected bitex-not-logged active-view-start ">
+
+<!-- .head -->
+<header class="head">
+    <!-- .head-top -->
+    <div class="head-top">
+        <!-- .container-fluid -->
+        <div class="container">
+            <!-- .head-ticker -->
+            <ul class="head-ticker">
+                <li>
+                    <span class="head-ticker__title">
+                        <i class="glyphicon glyphicon-triangle-right"></i> 上次交易&nbsp;
+                    </span>
+                    <span class="head-ticker__value">
+                      <span class="bitex-model"
+                            data-model-key-list="formatted_BLINK_BTCUSD_LAST_PX"
+                            data-model-formula="formatted_BLINK_BTCUSD_LAST_PX"
+                            data-blink-class="balance-info-blink"
+                        ></span>
+                    </span>
+                </li>
+                <li>
+                    <span class="head-ticker__title">
+                        <i class="glyphicon glyphicon-triangle-right"></i> 高&nbsp;
+                    </span>
+                    <span class="head-ticker__value">
+                      <span class="bitex-model"
+                            data-model-key-list="formatted_BLINK_BTCUSD_HIGH_PX"
+                            data-model-formula="formatted_BLINK_BTCUSD_HIGH_PX"
+                            data-blink-class="balance-info-blink"
+                        ></span>
+                    </span>
+                </li>
+                <li>
+                    <span class="head-ticker__title">
+                        <i class="glyphicon glyphicon-triangle-right"></i> 低&nbsp;
+                    </span>
+                    <span class="head-ticker__value">
+                      <span class="bitex-model"
+                            data-model-key-list="formatted_BLINK_BTCUSD_LOW_PX"
+                            data-model-formula="formatted_BLINK_BTCUSD_LOW_PX"
+                            data-blink-class="balance-info-blink"
+                        ></span>
+                    </span>
+                </li>
+            </ul>
+            <!-- /.head-ticker -->
+
+            <ul class="head-top-nav navbar-right pull-right">
+              <!-- .head-market -->
+              <li>
+                <a data-switch-view="market" href="#" class="head-top-button">
+                    <i class="glyphicon glyphicon-stats"></i> 市场
+                </a>
+              </li>
+              <!-- /.head-market -->
+              <!-- .head-language -->
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle head-top-button" data-toggle="dropdown" role="button" aria-expanded="false" style="padding:13.5px">
+                    <span class="flag-icon flag-icon-zn_CN"></span> <b class="caret"></b></a>
+                </a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="drop1" style="min-width:60px;max-width:61px">
+                
+                  
+                
+                  
+                    
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="https://yuanbitcoin.github.io//en_US">
+                        <span class="flag-icon flag-icon-en_US"></span></a></li>
+                    
+                  
+                
+                </ul>
+              </li>
+              <!-- /.head-language -->
+            </ul>
+        </div>
+        <!-- /.container-fluid -->
+    </div>
+    <!-- /.head-top -->
+
+    <!-- .navbar -->
+    <nav id="id_toolbar" class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          
+          <a class="navbar-brand" href="#" data-switch-view="offerbook">
+              <img data-switch-view="offerbook" class="logo__img" 
+              src="//assets/exchange_logos/bitinvest_toolbar_logo.png"
+              style=" height: 30px; margin-top: -5px; ">
+          </a>
+          
+        </div>
+
+        
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="bitex-display-if-logged">
+                <!-- .balance -->
+                <div class="balance" id="id_account_summary_content"></div>
+                <!-- /.balance -->
+            </li>
+            <li class="bitex-display-if-logged dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                <img class="thumb thumb-p home-img" src="https://yuanbitcoin.github.io//assets/themes/coinage/img/coinage-avatar.png" />
+                <span class="bitex-model bitex-view-title" data-model-key="DisplayName"></span>
+                <span class="caret"></span>
+              </a>
+              <div class="dropdown-arrow"></div>
+              <ul class="dropdown-menu" role="menu" style="min-width: 220px;">
+                  <li class="dropdown-account" role="presentation">
+                      <a href="#">
+                        <div class="row" data-switch-view="profile">
+                          <div class="col-xs-4">
+                            <img class="thumb thumb-g home-img" data-switch-view="profile" src="https://yuanbitcoin.github.io//assets/themes/coinage/img/coinage-avatar.png" />
+                          </div>
+                          <div class="col-xs-8" data-switch-view="profile">
+                            <strong class="bitex-model bitex-view-title" data-switch-view="profile" data-model-key="DisplayName"></strong>
+                            <br>
+                            <small style="line-height: 1;">(<span class="bitex-model bitex-view-title" data-model-key="PseudoName" data-switch-view="profile"></span>)</small>
+                          </div>
+                        </div>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" data-switch-view="my_broker">
+                         关于交易所
+                      </a>
+                  </li>
+                  <li class="bitex-display-if-broker">
+                    <a href="#" data-switch-view="customers">
+                      我的客户
+                    </a>
+                  </li>
+                  <li class="bitex-display-if-broker">
+                    <a href="#" data-switch-view="deposit_requests">
+                      充值申请
+                    </a>
+                  </li>
+                  <li class="bitex-display-if-broker">
+                    <a href="#" data-switch-view="withdraw_requests">
+                      提现申请
+                    </a>
+                  </li>
+                  <li>
+                      <a href="#" data-switch-view="deposit">
+                         我的充值
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" data-switch-view="withdraw">
+                         我的提现
+                      </a>
+                  </li>
+                <li class="divider"></li>
+                <li>
+                    <a href="javascript:location.reload();">
+                        <i class="glyphicon glyphicon-off"></i> 退出
+                    </a>
+                </li>
+              </ul>
+            </li>
+            <li class="bitex-hide-if-logged">
+              <button class="btn btn-outline btn-signup col-xs-12" style="float:none" href="#" data-switch-view="signup">
+                  注册
+              </button>
+            </li>
+            <li class="bitex-hide-if-logged">
+              <button class="btn btn-primary btn-signin col-xs-12" href="#" data-switch-view="signin">
+                  登陆
+              </button>
+            </li>
+
+            <li class="bitex-hide-if-ws-connected">
+                <button href="#" id="id_button_connect_ws" class="btn btn-outline">
+                    <i class="glyphicon glyphicon-repeat"></i> Connect
+                </button>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+        
+      </div><!-- /.container-fluid -->
+    </nav>
+    <div class="alert-box bitex-display-if-logged">
+        <div class="alert | bitex-model" style="display: none" data-model-key="IsMissingVerification" data-model-action="show_element">
+            <div class="container">
+                <button type="button" class="close pull-right" data-dismiss="alert">&times;</button>
+                <a href="" class="alert-link" data-switch-view="verification"> 请提交必须的资料，并验证您的账户 </a>
+            </div>
+        </div>
+
+        <div class="alert alert-success | bitex-model" style="display: none" data-model-key="TwoFactorEnabled" data-model-action="hide_element">
+            <div class="container">
+                <button type="button" class="close pull-right" data-dismiss="alert">&times;</button>
+                <a href="" class="alert-link" data-switch-view="twofactor"> 为了您的账户的安全性，请启用二重验证系统。 </a>
+            </div>
+        </div>
+
+        <div class="alert alert-danger | bitex-model" style="display: none" data-model-key="IsAccountBlocked" data-model-action="show_element">
+            <div class="container">
+                <button type="button" class="close pull-right" data-dismiss="alert">&times;</button>
+                <a href="" class="alert-link" data-switch-view="faq"> 你的账户已经被管理员冻结，请联系管理员。 </a>
+            </div>
+        </div>
+    </div>
+    <!-- /.navbar -->
+</header>
+<!-- /.head -->
+
+
 
 <!-- .container-fluid -->
 <div class="background">
@@ -13,21 +280,14 @@ load_application:       True
       <!-- .home -->
       <div class="home">
         <!-- .home-banner -->
-        <div class="home-banner" style="background-image: url({{ site.url }}{{ site.baseurl }}/assets/themes/coinage/img/home-banner-{{site.exchange}}.jpg)">
+        <div class="home-banner" style="background-image: url(https://yuanbitcoin.github.io//assets/themes/coinage/img/home-banner-bitinvest.jpg)">
             <!-- .home-banner__table -->
             <div class="home-banner__table">
-                {% if site.video == 'true' %}
-                <div class="home-overlay"></div>
-                <div class="home-media">
-                    <video autoplay loop muted="true" poster="{{ site.url }}{{ site.baseurl }}/assets/themes/coinage/img/{{ site.exchange }}-video-fallback.jpg">
-                        <source src="{{ site.url }}{{ site.baseurl }}/assets/themes/coinage/img/{{ site.exchange }}_video.webm"></source>
-                    </video>
-                </div>
-                {% endif %}
+                
                 <!-- .home-banner__cell -->
                 <div class="home-banner__cell">
-                    {% assign lead = "exchanges." | append: site.exchange | append: ".lead" %}
-                    <h1 class="home-banner__title">{% t lead %}</h1>
+                    
+                    <h1 class="home-banner__title">Bitcoin rápido, fácil e seguro - Comprar e Vender Bitcoin com as menores taxas do Brasil</h1>
 
                     <!-- .home-->
                     <div class="col-xs-12 col-sm-8 col-md-6 col-md-offset-3 col-sm-offset-2">
@@ -37,12 +297,12 @@ load_application:       True
                             <div class="col-md-3 col-xs-12">
                               <a id="id_landing_signin" style="display:none"></a>
                               <a href="#" data-switch-view="signup" class="btn btn-primary btn-block btn-lg" style="text-transform:uppercase">
-                                {% t views.toolbar.signup %}
+                                注册
                               </a>
                             </div>
                             <div class="col-md-3 col-xs-12">
                               <a data-switch-view="signin" class="btn btn-lg btn-block btn-outline-white" style="text-transform:uppercase">
-                                {% t views.toolbar.signin %}
+                                登陆
                               </a>
                             </div>
                           </div>
@@ -67,30 +327,30 @@ load_application:       True
                         <!-- .home-news-item -->
                         <div class="home-news-item">
                             <div class="home-news-item__icon">
-                                <img class="home-img" src="{{ site.baseurl }}/assets/themes/coinage/img/ico-tradewithus.png" alt="" />
+                                <img class="home-img" src="//assets/themes/coinage/img/ico-tradewithus.png" alt="" />
                             </div>
 
-                            {% assign about  = "views.landing.about" %}
-                            {% assign book   = "views.landing.orderbook" %}
-                            {% assign signup = "views.landing.signup" %}
+                            
+                            
+                            
 
-                            {% assign title1 = about | append: "." | append: site.phrases[0] | append: ".title" %}
-                            {% assign desc1  = about | append: "." | append: site.phrases[0] | append: ".description" %}
+                            
+                            
 
-                            {% assign title2 = about | append: "." | append: site.phrases[1] | append: ".title" %}
-                            {% assign desc2  = about | append: "." | append: site.phrases[1] | append: ".description" %}
+                            
+                            
 
-                            {% assign title3 = about | append: "." | append: site.phrases[2] | append: ".title" %}
-                            {% assign desc3  = about | append: "." | append: site.phrases[2] | append: ".description" %}
+                            
+                            
 
-                            {% assign learn  = about | append: ".learn" %}
+                            
 
-                            <h2 class="home-news-item__title h3">{% t title1 %}</h2>
+                            <h2 class="home-news-item__title h3">Proin quis egestas eros</h2>
 
-                            <p>{% t desc1 %}</p>
+                            <p>Nunc non est ut neque lobortis mattis. Donec ultricies tortor at mi lobortis cursus. Vestibulum felis tellus, ultrices nec odio vitae, facilisis gravida sapien. Etiam efficitur quam at nunc consequat, sed ullamcorper ante convallis. Etiam ultrices, eros a egestas faucibus, nisi lectus ultrices arcu, eu viverra risus justo a est. Fusce laoreet sapien non mattis auctor. Proin odio felis, convallis eu velit quis, condimentum lobortis nibh.</p>
 
                             <div class="home-news-item__btn">
-                                <a href="" class="btn btn-default">{% t learn %}</a>
+                                <a href="" class="btn btn-default">Learn More</a>
                             </div>
                         </div>
                         <!-- /.home-news-item -->
@@ -102,15 +362,15 @@ load_application:       True
                         <!-- .home-news-item -->
                         <div class="home-news-item">
                             <div class="home-news-item__icon">
-                                <img class="home-img" src="{{ site.baseurl }}/assets/themes/coinage/img/ico-secure.png" alt="" />
+                                <img class="home-img" src="//assets/themes/coinage/img/ico-secure.png" alt="" />
                             </div>
 
-                            <h2 class="home-news-item__title h3">{% t title2 %}</h2>
+                            <h2 class="home-news-item__title h3">Pellentesque vestibulum lectus</h2>
 
-                            <p>{% t desc2 %}</p>
+                            <p>Integer placerat urna lectus, in luctus odio vehicula vel. Praesent eu sagittis massa. Vivamus ut urna interdum, porttitor ex sed, congue risus. Vestibulum sit amet mattis leo. Curabitur tempor convallis ornare. In dignissim est at pellentesque consequat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In a dui quis metus eleifend maximus.</p>
 
                             <div class="home-news-item__btn">
-                                <a href="" class="btn btn-default">{% t learn %}</a>
+                                <a href="" class="btn btn-default">Learn More</a>
                             </div>
                         </div>
                         <!-- /.home-news-item -->
@@ -122,15 +382,15 @@ load_application:       True
                         <!-- .home-news-item -->
                         <div class="home-news-item">
                             <div class="home-news-item__icon">
-                                <img class="home-img" src="{{ site.baseurl }}/assets/themes/coinage/img/ico-liquidity.png" alt="" />
+                                <img class="home-img" src="//assets/themes/coinage/img/ico-liquidity.png" alt="" />
                             </div>
 
-                            <h2 class="home-news-item__title h3">{% t title3 %}</h2>
+                            <h2 class="home-news-item__title h3">Maecenas vel magna</h2>
 
-                            <p>{% t desc3 %}</p>
+                            <p>Donec ac tincidunt enim, quis porttitor massa. Sed vulputate ex at quam venenatis, non facilisis justo vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi diam nisl, congue vehicula maximus eget, tempor nec ipsum. Vestibulum feugiat consequat lacus et congue. Phasellus eu felis vel dui cursus pharetra quis non lectus. Curabitur porta ultrices magna sit amet ultrices. Nam cursus lorem mollis arcu dignissim congue. Praesent vitae venenatis lorem, sit amet efficitur ipsum.</p>
 
                             <div class="home-news-item__btn">
-                                <a href="" class="btn btn-default">{% t learn %}</a>
+                                <a href="" class="btn btn-default">Learn More</a>
                             </div>
                         </div>
                         <!-- /.home-news-item -->
@@ -149,8 +409,8 @@ load_application:       True
             <div class="container">
                 <!-- .home-orders__head -->
                 <header class="home-orders__head">
-                  {% assign book_title = book | append: ".title" %}
-                  <h3 class="home-orders__title">{% t book_title %}</h3>
+                  
+                  <h3 class="home-orders__title">Live Order Book</h3>
                 </header>
                 <!-- /.home-orders__head -->
 
@@ -211,19 +471,19 @@ load_application:       True
         <!-- .home-contact -->
         <div class="home-contact">
             <div class="home-contact__icon">
-                <img class="home-img" src="{{ site.baseurl }}/assets/themes/coinage/img/ico-requestbeta.png" alt="" />
+                <img class="home-img" src="//assets/themes/coinage/img/ico-requestbeta.png" alt="" />
             </div>
 
-            {% assign signup_title  = signup | append: ".title" %}
-            {% assign signup_desc   = signup | append: ".description" %}
+            
+            
 
-            <h4 class="home-contact__title h3">{% t signup_title %}</h4>
+            <h4 class="home-contact__title h3">CREATE YOUR ACCOUNT NOW</h4>
 
-            <p>{% t signup_desc %}</p>
+            <p>Sign up and discover how easy it is to trade with us.</p>
 
             <div class="home-contact__btn">
                 <a href="#" data-switch-view="signup" class="btn btn-lg btn-primary">
-                    <i class="glyphicon glyphicon-log-in"></i> {% t views.toolbar.signup %}
+                    <i class="glyphicon glyphicon-log-in"></i> 注册
                 </a>
             </div>
         </div>
@@ -239,7 +499,7 @@ load_application:       True
       <!-- .page__head -->
       <header class="page__head">
           <h1 class="page__title h2 bitex-view-title">
-              <i class="glyphicon glyphicon-question-sign"></i> {% t views.faq.title %}
+              <i class="glyphicon glyphicon-question-sign"></i> FAQ - 常见问题
           </h1>
       </header>
       <!-- /.page__head -->
@@ -248,27 +508,12 @@ load_application:       True
       <div class="page__body bitex-view-content">
           <!-- .panel-group -->
           <div class="panel-group accordion" id="accordion">
-              {% for post in site.categories['faq'] reversed %}
-              <div class="panel panel-default accordion-group">
-                <div class="panel-heading accordion-heading">
-                <h4 class="panel-title">
-                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#{{ post.title }} ">
-                        {{post.title}}
-                    </a>
-                  </h4>
-                </div>
-                <div id="{{ post.title }}" class="panel-collapse accordion-body collapse">
-                  <div class="panel-body">
-                       {{post.content}}
-                  </div>
-                </div>
-              </div>
-              {% endfor %}
+              
           </div>
           <!-- /.panel-group -->
 
           <a href="" class="bitex-support-link" target="_blank">
-              <i class="glyphicon glyphicon-envelope"></i> {% t views.faq.get_in_touch %}.
+              <i class="glyphicon glyphicon-envelope"></i> 如果您还有其他疑惑，请联系我们.
           </a>
       </div>
       <!-- /.page__body -->
@@ -282,7 +527,7 @@ load_application:       True
       <!-- .page__head -->
       <header class="page__head">
           <h1 class="page__title h2 bitex-view-title">
-              <i class="glyphicon glyphicon-stats"></i> {% t views.market.title %}
+              <i class="glyphicon glyphicon-stats"></i> 市场
           </h1>
       </header>
       <!-- /.page__head -->
@@ -302,14 +547,14 @@ load_application:       True
         <!-- .col-md-6 -->
         <div class="page__content page__padding col-md-10 col-md-offset-1">
             <header class="page__head">
-                <h1 class="page__title bitex-view-title">{% t views.themes.title %}</h1>
-                <p>{% t views.themes.choose %}</p>
+                <h1 class="page__title bitex-view-title">Themes</h1>
+                <p>Choose a Theme</p>
             </header>
             <div class="bitex-view-content page__body">
                 <div class="row" style="text-align:center">
-                    <a href="{{ site.url}}{{ site.baseurl}}/themes/coinage/">
+                    <a href="https://yuanbitcoin.github.io//themes/coinage/">
                         <div class="col-md-5 thumb-theme" style="margin:auto;float:none">
-                            <img src="{{ site.url}}{{ site.baseurl }}/assets/exchange_logos/thumb-themes/{{ site.exchange }}-coinage-thumb.jpg" alt="Coinage Theme">
+                            <img src="https://yuanbitcoin.github.io//assets/exchange_logos/thumb-themes/bitinvest-coinage-thumb.jpg" alt="Coinage Theme">
                             <h3>Coinage Theme</h3>
                         </div>
                     </a>
@@ -317,25 +562,25 @@ load_application:       True
                 <hr>
                 <div class="row" style="text-align:center">
                     <div class="col-xs-4">
-                        <a href="{{ site.url}}{{ site.baseurl}}/themes/default/">
+                        <a href="https://yuanbitcoin.github.io//themes/default/">
                             <div class="thumb-theme">
-                                <img src="{{ site.url}}{{ site.baseurl }}/assets/exchange_logos/thumb-themes/{{ site.exchange }}-default-thumb.jpg" alt="Default Theme">
+                                <img src="https://yuanbitcoin.github.io//assets/exchange_logos/thumb-themes/bitinvest-default-thumb.jpg" alt="Default Theme">
                                 <h3 class="ls-title-4">Default Theme</h3>
                             </div>
                         </a>
                     </div>
                     <div class="col-xs-4">
-                        <a href="{{ site.url}}{{ site.baseurl}}/themes/ander/">
+                        <a href="https://yuanbitcoin.github.io//themes/ander/">
                             <div class="thumb-theme">
-                                <img src="{{ site.url}}{{ site.baseurl }}/assets/exchange_logos/thumb-themes/{{ site.exchange }}-ander-thumb.jpg" alt="Ander Theme">
+                                <img src="https://yuanbitcoin.github.io//assets/exchange_logos/thumb-themes/bitinvest-ander-thumb.jpg" alt="Ander Theme">
                                 <h3 class="ls-title-4">Ander</h3>
                             </div>
                         </a>
                     </div>
                     <div class="col-xs-4">
-                        <a href="{{ site.url}}{{ site.baseurl}}/themes/whitedev/">
+                        <a href="https://yuanbitcoin.github.io//themes/whitedev/">
                             <div class="thumb-theme">
-                                <img src="{{ site.url}}{{ site.baseurl }}/assets/exchange_logos/thumb-themes/{{ site.exchange }}-whitedev-thumb.jpg" alt="Whitedev Theme">
+                                <img src="https://yuanbitcoin.github.io//assets/exchange_logos/thumb-themes/bitinvest-whitedev-thumb.jpg" alt="Whitedev Theme">
                                 <h3 class="ls-title-4">Whitedev</h3>
                             </div>
                         </a>
@@ -356,10 +601,10 @@ load_application:       True
                 <!-- .page__head -->
                 <header class="page__head">
                     <h1 class="page__title h2 bitex-view-title" style="margin-bottom: 10px;">
-                        <i class="glyphicon glyphicon-user"></i> {% t views.signin.title %}
+                        <i class="glyphicon glyphicon-user"></i> 登陆
                     </h1>
                     <p>
-                      {% t views.signin.dont_have_an_account %} <a href="signup" data-switch-view="signup">{% t views.signin.signup %}</a>.
+                      还没有账户？ <a href="signup" data-switch-view="signup">注册</a>.
                     </p>
                 </header>
                 <!-- /.page__head -->
@@ -368,19 +613,19 @@ load_application:       True
                 <div class="page__body bitex-view-content">
                   <form accept-charset="UTF-8" action="" method="post">
                     <div class="form-group">
-                      <label for="id_username">{% t views.signin.username %}:</label>
+                      <label for="id_username">用户名:</label>
                       <input class="form-control" autocapitalize="off" autocorrect="off" id="id_username" name="username" type="text">
                     </div>
 
                     <div class="form-group">
-                      <label for="id_password">{% t views.signin.password %}:</label>
+                      <label for="id_password">密码:</label>
                       <input class="form-control" id="id_password"  placeholder="" name="password" type="password">
                       <p class="help-block">
-                        <a class="login__remember" href="forgot_password" data-switch-view="forgot_password">{% t views.signin.forgot_your_password %}</a>
+                        <a class="login__remember" href="forgot_password" data-switch-view="forgot_password">忘记了密码？</a>
                       </p>
                     </div>
 
-                    <input id="id_btn_login"  class="btn btn-primary btn-block" name="commit" type="submit" value="{% t views.signin.login_button_label %}">
+                    <input id="id_btn_login"  class="btn btn-primary btn-block" name="commit" type="submit" value="登陆">
                   </form>
                 </div>
                 <!-- /.page__body -->
@@ -400,9 +645,9 @@ load_application:       True
                 <!-- .page__head -->
                 <header class="page__head">
                     <h1 class="page__title h2 bitex-view-title" style="margin-bottom: 10px;">
-                        <i class="glyphicon glyphicon-log-in"></i> {% t views.signup.title %}
+                        <i class="glyphicon glyphicon-log-in"></i> 注册
                     </h1>
-                    <p>{% t views.signup.already_registered %} <a href="#" data-switch-view="signin">{% t views.signup.login %}</a>.</p>
+                    <p>已经注册过？ <a href="#" data-switch-view="signin">登陆</a>.</p>
                 </header>
                 <!-- /.page__head -->
 
@@ -410,38 +655,38 @@ load_application:       True
                 <div class="page__body bitex-view-content">
                     <form accept-charset="UTF-8" id="new_user" method="post">
                         <div class="form-group">
-                          <label for="id_signup_username">{% t views.signup.username %}:</label>
+                          <label for="id_signup_username">用户名:</label>
                           <input id="id_signup_username" class="form-control" name="Username" size="30" type="text" placeholder="">
                         </div>
 
                         <div class="form-group">
-                          <label for="id_signup_email">{% t views.signup.email %}:</label>
-                          <input id="id_signup_email" class="form-control" name="Email" size="30" type="text" placeholder="{% t views.signup.email_placeholder %}">
+                          <label for="id_signup_email">邮箱地址:</label>
+                          <input id="id_signup_email" class="form-control" name="Email" size="30" type="text" placeholder="例如.: 123456@qq.com">
                         </div>
 
                         <div class="form-group">
-                          <label for="id_signup_password">{% t views.signup.password %}:</label>
+                          <label for="id_signup_password">密码:</label>
                           <input id="id_signup_password" class="form-control" name="Password" size="30" type="password">
-                          <p class="help-block">{% t views.signup.password_help %}</p>
+                          <p class="help-block">密码长度至少 8 位</p>
                         </div>
 
                         <div class="form-group">
-                          <label for="id_signup_password2">{% t views.signup.confirm_password %}:</label>
+                          <label for="id_signup_password2">确认您的密码:</label>
                           <input id="id_signup_password2" class="form-control" name="Password2" size="30" type="password">
                         </div>
 
                         <div class="form-group">
-                          <label for="id_signup_country">{% t views.signup.country %}:</label>
+                          <label for="id_signup_country">国家:</label>
                           <select id="id_signup_country" class="form-control" name="country"></select>
                         </div>
 
                         <div class="form-group" id="id_signup_state_group" style="display: none">
-                          <label for="id_signup_state">{% t views.signup.state %}:</label>
+                          <label for="id_signup_state">省份或者直辖市:</label>
                           <select id="id_signup_state" class="form-control" name="state"></select>
                         </div>
 
                         <div class="form-group" style="display: none;">
-                          <label for="id_signup_broker">{% t views.signup.broker %}</label>
+                          <label for="id_signup_broker">代理人</label>
                           <select id="id_signup_broker" class="form-control" name="broker"></select>
                         </div>
 
@@ -449,11 +694,11 @@ load_application:       True
 
                         <div class="form-group">
                             <label for="">
-                              <input id="user_agreed_tos" name="" type="checkbox" checked> {% t views.signup.i_agree_with_terms_of_service %}
+                              <input id="user_agreed_tos" name="" type="checkbox" checked> 我同意一下服务条约
                             </label>
                         </div>
 
-                        <button id="id_btn_signup" class="btn btn-primary btn-block">{% t views.signup.signup_button_label %}</button>
+                        <button id="id_btn_signup" class="btn btn-primary btn-block">注册</button>
                     </form>
                 </div>
                 <!-- /.page__body -->
@@ -473,7 +718,7 @@ load_application:       True
                 <!-- .page__head -->
                 <header class="page__head">
                     <h1 class="page__title h2 bitex-view-title">
-                        <i class="glyphicon glyphicon-envelope"></i> {% t views.forgot_password.title %}
+                        <i class="glyphicon glyphicon-envelope"></i> 重置密码
                     </h1>
                 </header>
                 <!-- /.page__head -->
@@ -482,11 +727,11 @@ load_application:       True
                 <div class="page__body bitex-view-content">
                   <form accept-charset="UTF-8" action="" method="post">
                       <div class="form-group">
-                        <label for="id_forgot_password_email">{% t views.forgot_password.email %}:</label>
+                        <label for="id_forgot_password_email">邮箱地址:</label>
                         <input autocapitalize="off" autocorrect="off" id="id_forgot_password_email" class="form-control" name="email" type="text" placeholder="">
                       </div>
 
-                      <input id="id_btn_forgot_password" class="btn btn-primary btn-block" name="commit" type="submit" value="{% t views.forgot_password.recover_password_button_label %}">
+                      <input id="id_btn_forgot_password" class="btn btn-primary btn-block" name="commit" type="submit" value="重置密码">
                   </form>
                 </div>
                 <!-- /.page__body -->
@@ -527,7 +772,7 @@ load_application:       True
 
             <!-- .sidebar-box -->
             <div class="sidebar-box">
-                <h5 class="sidebar-box__title">{% t views.sidebar.market %}</h5>
+                <h5 class="sidebar-box__title">市场:</h5>
 
                 <div class="sidebar-box__body">
                     <select class="form-control" id="id_instrument_1"></select>
@@ -543,57 +788,57 @@ load_application:       True
                     <ul class="sidebar-box-nav nav">
                         <li class="bitex-display-if-broker" id="menu-admin_view">
                           <a href="" data-switch-view="admin_view">
-                            <i data-switch-view="admin" class="glyphicon glyphicon-user"></i> {% t views.sidebar.admin %}
+                            <i data-switch-view="admin" class="glyphicon glyphicon-user"></i> Admin
                           </a>
                         </li>
                         <li role="presentation" id="menu-trading">
                             <a href="#" data-switch-view="trading">
-                                <i class="glyphicon glyphicon-random"></i> {% t views.sidebar.trading %}
+                                <i class="glyphicon glyphicon-random"></i> 买进和卖出
                             </a>
                         </li>
                         <li role="presentation" id="menu-offerbook">
                             <a href="#" data-switch-view="offerbook">
-                                <i class="glyphicon glyphicon-book"></i> {% t views.sidebar.offerbook %}
+                                <i class="glyphicon glyphicon-book"></i> 我的订单
                             </a>
                         </li>
                         <li role="presentation" id="menu-history">
                             <a href="#" data-switch-view="history">
-                                <i class="fa fa-history"></i> {% t views.sidebar.history %}
+                                <i class="fa fa-history"></i> 订单历史
                             </a>
                         </li>
                         <li role="presentation" id="menu-deposit" class="bitex-display-if-non-broker">
                             <a href="#" data-switch-view="deposit">
-                                <i class="fa fa-download"></i> {% t views.sidebar.deposit %}
+                                <i class="fa fa-download"></i> 我的充值
                             </a>
                         </li>
                         <li role="presentation" id="menu-withdraw" class="bitex-display-if-non-broker">
                             <a href="#" data-switch-view="withdraw">
-                                <i class="fa fa-upload"></i> {% t views.sidebar.withdraw %}
+                                <i class="fa fa-upload"></i> 我的提现
                             </a>
                         </li>
                         <li role="presentation" id="menu-algotrading">
                             <a href="#" data-switch-view="algotrading">
-                                <i class="glyphicon glyphicon-cog"></i> {% t views.sidebar.algotrading %}
+                                <i class="glyphicon glyphicon-cog"></i> 程序自动交易
                             </a>
                         </li>
                         <li role="presentation" id="menu-ledger">
                             <a href="#" data-switch-view="ledger">
-                                <i class="glyphicon glyphicon-th-list"></i> {% t views.sidebar.ledger %}
+                                <i class="glyphicon glyphicon-th-list"></i> 我的总账
                             </a>
                         </li>
                         <li role="presentation" id="menu-market">
                             <a href="#" data-switch-view="market">
-                                <i class="glyphicon glyphicon-stats"></i> {% t views.toolbar.market %}
+                                <i class="glyphicon glyphicon-stats"></i> 市场
                             </a>
                         </li>
                         <li id="verification_menu_id">
                             <a href="verification" data-switch-view="verification">
-                                <i class="glyphicon glyphicon-check"></i> {% t views.sidebar.verification %}
+                                <i class="glyphicon glyphicon-check"></i> 验证我的账户
                             </a>
                         </li>
                         <li>
                             <a href="javascript:location.reload()">
-                                <i class="glyphicon glyphicon-off"></i> {% t views.sidebar.logout %}
+                                <i class="glyphicon glyphicon-off"></i> 退出
                             </a>
                         </li>
                     </ul>
@@ -614,7 +859,7 @@ load_application:       True
                 <!-- .page__head -->
                 <header class="page__head section-title">
                     <h3 class="page__title bitex-view-title">
-                        <i class="glyphicon glyphicon-book"></i> {% t views.offerbook.title %}
+                        <i class="glyphicon glyphicon-book"></i> 订单
                     </h3>
                 </header>
                 <!-- /.page__head -->
@@ -629,10 +874,10 @@ load_application:       True
                   <div class="order">
                     <!-- .order__cell -->
                     <!-- <div class="btn btn-default btn-show-cum-qty"> -->
-                      <!-- {% t views.offerbook.cumulative %} -->
+                      <!-- 累计订单 -->
                     <!-- </div> -->
                     <!-- <div class="btn btn-default btn-show-fees"> -->
-                      <!-- {% t views.offerbook.fees %} -->
+                      <!-- 手续费 -->
                     <!-- </div> -->
                     <div id="id_order_book_bid_content" class="order__cell col-md-6 col-xs-12"></div>
                     <!-- /.order__cell -->
@@ -652,7 +897,7 @@ load_application:       True
                 <!-- .page__head -->
                 <header class="page__head section-title">
                     <h1 class="page__title h2 bitex-view-title">
-                        <i class="glyphicon glyphicon-user"></i> {% t views.profile.title %}
+                        <i class="glyphicon glyphicon-user"></i> 我的个人资料
                     </h1>
                 </header>
                 <!-- /.page__head -->
@@ -668,13 +913,13 @@ load_application:       True
                   <!-- .profile-two-factor -->
                   <div class="profile-two-factor col-xs-12 col-md-5 page__section_white page__padding">
                       <!-- .profile-two-factor__title -->
-                      <h4 class="profile-two-factor__title">{% t views.profile.two_factor_auth_section.title %}</h4>
+                      <h4 class="profile-two-factor__title">两重验证 (2FA)</h4>
                       <!-- /.profile-two-factor__title -->
 
                       <!-- .profile-two-factor__foot -->
                       <div class="profile-two-factor__foot">
-                          <button id="id_btn_enable_two_factor" class="btn btn-success profile-two-factor__btn">{% t views.profile.two_factor_auth_section.enable %}</button>
-                          <button id="id_btn_disable_two_factor" class="btn btn-danger profile-two-factor__btn">{% t views.profile.two_factor_auth_section.disable %}</button>
+                          <button id="id_btn_enable_two_factor" class="btn btn-success profile-two-factor__btn">启用Google两重验证</button>
+                          <button id="id_btn_disable_two_factor" class="btn btn-danger profile-two-factor__btn">停用Google两重验证</button>
                       </div>
                       <!-- /.profile-two-factor__foot -->
                   </div>
@@ -691,14 +936,14 @@ load_application:       True
                     <div class="row">
                       <div class="col-xs-6">
                         <h1 class="page__title h2 bitex-view-title">
-                            <i class="glyphicon glyphicon-dashboard"></i> {% t views.api.title %}
+                            <i class="glyphicon glyphicon-dashboard"></i> API Keys
                         </h1>
                       </div>
                       <div class="col-xs-6 pull-right">
                         <ul id="id_api_button_group" class="page__nav">
                             <li>
                                 <a id="id_btn_new_api_key" class="btn btn-success">
-                                    <i class="glyphicon glyphicon-plus"></i> {% t views.api.new_api_key %}
+                                    <i class="glyphicon glyphicon-plus"></i> New API Key
                                 </a>
                             </li>
                         </ul>
@@ -737,7 +982,7 @@ load_application:       True
                 <!-- .page__head -->
                 <header class="page__head section-title">
                     <h3 class="page__title bitex-view-title">
-                        <i class="glyphicon glyphicon-random"></i> {% t views.trading.title %}
+                        <i class="glyphicon glyphicon-random"></i> 买进和卖出
                     </h3>
                 </header>
                 <!-- /.page__head -->
@@ -752,7 +997,7 @@ load_application:       True
               <!-- /#trading -->
               <div id="history" class="bitex-view">
                   <div class="section-title">
-                      <h3 class="bitex-view-title">{% t views.history.title %}</h3>
+                      <h3 class="bitex-view-title">订单历史</h3>
                   </div>
                   <div class="content bitex-view-content">
                   </div>
@@ -763,7 +1008,7 @@ load_application:       True
                 <!-- .page__head -->
                 <header class="page__head section-title">
                     <h1 class="page__title h2 bitex-view-title">
-                        <i class="glyphicon glyphicon-cog"></i> {% t views.algotrading.title %}
+                        <i class="glyphicon glyphicon-cog"></i> 程序自动交易
                     </h1>
                 </header>
                 <!-- /.page__head -->
@@ -781,7 +1026,7 @@ load_application:       True
                 <!-- .page__head -->
                 <header class="page__head section-title">
                     <h1 class="page__title h2 bitex-view-title">
-                        <i class="glyphicon glyphicon-th-list"></i> {% t views.ledger.title %}
+                        <i class="glyphicon glyphicon-th-list"></i> 我的总账
                     </h1>
                 </header>
                 <!-- /.page__head -->
@@ -799,41 +1044,41 @@ load_application:       True
               <!-- admin -->
               <div id="admin_view" class="bitex-view">
                 <header class="page__head section-title">
-                  <h3 class="page__title h2 bitex-view-title">{% t views.admin.title %}</h3>
+                  <h3 class="page__title h2 bitex-view-title">Admin</h3>
                 </header>
                 <div class="page__body bitex-view-content">
                   <div id="admin-tabs">
                     <ul class="nav nav-tabs">
                       <li class="active">
-                        <a href="#TabCustomers" data-toggle="tab">{% t views.customers.title %}</a>
+                        <a href="#TabCustomers" data-toggle="tab">我的客户</a>
                       </li>
                       <li>
-                        <a href="#TabDepositRequests" data-toggle="tab">{% t views.deposit_requests.title %}</a>
+                        <a href="#TabDepositRequests" data-toggle="tab">充值申请</a>
                       </li>
                       <li>
-                        <a href="#TabWithdrawRequests" data-toggle="tab">{% t views.withdraw_requests.title %}</a>
+                        <a href="#TabWithdrawRequests" data-toggle="tab">提现申请</a>
                       </li>
                       <li>
-                        <a href="#TabWithdrawMethods" data-toggle="tab">{% t views.withdraw_methods.title %}</a>
+                        <a href="#TabWithdrawMethods" data-toggle="tab">Withdraw methods</a>
                       </li>
                     </ul>
                     <div class="tab-content">
                       <div class="tab-pane fade" id="TabCustomers">
-                        <h2 class="bitex-view-title">{% t views.customers.title %}</h2>
+                        <h2 class="bitex-view-title">我的客户</h2>
                         <div id="admin_customers"></div>
                       </div>
                       <div class="tab-pane fade" id="TabDepositRequests">
-                        <h2 class="bitex-view-title">{% t views.deposit_requests.title %}</h2>
+                        <h2 class="bitex-view-title">充值申请</h2>
 
                         <div id="admin_deposit_requests"></div>
                       </div>
                       <div class="tab-pane fade" id="TabWithdrawRequests">
-                        <h2 class="bitex-view-title">{% t views.withdraw_requests.title %}</h2>
+                        <h2 class="bitex-view-title">提现申请</h2>
 
                         <div id="admin_withdraw_requests"></div>
                       </div>
                       <div class="tab-pane fade" id="TabWithdrawMethods">
-                        <h2 class="bitex-view-title">{% t views.withdraw_methods.title %}</h2>
+                        <h2 class="bitex-view-title">Withdraw methods</h2>
 
                         <div id="admin_withdraw_methods"></div>
                       </div>
@@ -847,7 +1092,7 @@ load_application:       True
               <div id="customers" class="bitex-view">
                 <!-- .page__head -->
                 <header class="page__head section-title">
-                  <h1 class="page__title h2 bitex-view-title">{% t views.customers.title %}</h1>
+                  <h1 class="page__title h2 bitex-view-title">我的客户</h1>
                 </header>
                 <!-- /.page__head -->
 
@@ -864,7 +1109,7 @@ load_application:       True
                 <!-- .page__head -->
                 <header class="page__head section-title">
                     <h1 class="page__title h2 bitex-view-title">
-                        <i class="glyphicon glyphicon-plus-sign"></i> {% t views.deposit_requests.title %}
+                        <i class="glyphicon glyphicon-plus-sign"></i> 充值申请
                     </h1>
                 </header>
                 <!-- /.page__head -->
@@ -883,7 +1128,7 @@ load_application:       True
                 <!-- .page__head -->
                 <header class="page__head section-title">
                     <h1 class="page__title h2 bitex-view-title">
-                        <i class="glyphicon glyphicon-minus-sign"></i> {% t views.withdraw_requests.title %}
+                        <i class="glyphicon glyphicon-minus-sign"></i> 提现申请
                     </h1>
                 </header>
                 <!-- /.page__head -->
@@ -902,7 +1147,7 @@ load_application:       True
                 <!-- .page__head -->
                 <header class="page__head section-title page__head-float">
                     <h1 class="page__title h2 bitex-view-title page__title-float">
-                        <i class="glyphicon glyphicon-plus"></i> {% t views.deposit.title %}
+                        <i class="glyphicon glyphicon-plus"></i> 我的充值
                     </h1>
                     <div id="id_deposit_button_group" class="row-fluid text-right" style="" ></div>
                 </header>
@@ -923,7 +1168,7 @@ load_application:       True
                 <!-- .page__head -->
                 <header class="page__head section-title page__head-float">
                     <h1 class="page__title h2 bitex-view-title page__title-float">
-                        <i class="glyphicon glyphicon-minus"></i> {% t views.withdraw.title %}
+                        <i class="glyphicon glyphicon-minus"></i> 我的提现
                     </h1>
                     <div id="id_withdraw_button_group" class="row-fluid text-right" style="" ></div>
                 </header>
@@ -943,7 +1188,7 @@ load_application:       True
               <div id="account_overview" class="bitex-view">
                 <!-- .page__head -->
                 <header class="page__head section-title">
-                  <h1 class="page__title h2 bitex-view-title">{% t views.account_overview.title %}</h1>
+                  <h1 class="page__title h2 bitex-view-title">账户详情</h1>
                 </header>
                 <!-- /.page__head -->
 
@@ -959,7 +1204,7 @@ load_application:       True
 
                         <div id="account_overview_fees_balances_id"></div>
 
-                        <button id="id_btn_user_fees" class="btn btn-primary">{% t views.account_overview.set_user_fees_button_label %}</button>
+                        <button id="id_btn_user_fees" class="btn btn-primary">设置用户交易手续费</button>
 
                       </div>
                     </div>
@@ -974,7 +1219,7 @@ load_application:       True
               <div id="set_new_password" class="bitex-view">
                 <!-- .page__head -->
                 <header class="page__head section-title">
-                  <h1 class="page__title h2 bitex-view-title">{% t views.set_new_password.title %}</h1>
+                  <h1 class="page__title h2 bitex-view-title">设置新的密码</h1>
                 </header>
                 <!-- /.page__head -->
 
@@ -983,31 +1228,31 @@ load_application:       True
                   <form accept-charset="UTF-8" class="form-horizontal" id="redefine_new_password_form" method="post">
 
                     <div class="control-group">
-                      <label class="control-label">{% t views.set_new_password.security_code %}</label>
+                      <label class="control-label">安全验证码</label>
                       <div class="controls">
                         <input id="id_set_new_password_token" name="Email" size="30" type="text" placeholder="">
-                        <p class="help-block">{% t views.set_new_password.security_code_help %}</p>
+                        <p class="help-block">我们已向您的邮箱发送了安全验证码，请查收</p>
                       </div>
 
                     </div>
 
                     <div class="control-group">
-                      <label class="control-label">{% t views.set_new_password.new_password %}</label>
+                      <label class="control-label">新的密码</label>
                       <div class="controls">
                         <input id="id_set_new_password_password" name="Password" size="30" type="password">
-                        <p class="help-block">{% t views.set_new_password.new_password_help %}</p>
+                        <p class="help-block">密码长度至少 8 位</p>
                       </div>
                     </div>
 
                     <div class="control-group">
-                      <label class="control-label">{% t views.set_new_password.confirm_password %}</label>
+                      <label class="control-label">确认您的密码</label>
                       <div class="controls">
                         <input id="id_set_new_password_password2" name="Password2" size="30" type="password">
                       </div>
                     </div>
 
                     <div class="actions">
-                      <input id="id_btn_set_new_password"  class="btn btn-primary" name="commit" type="submit" value="{% t views.set_new_password.set_new_password_button_label %}">
+                      <input id="id_btn_set_new_password"  class="btn btn-primary" name="commit" type="submit" value="重置您的密码">
                     </div>
                   </form>
                 </div>
@@ -1019,7 +1264,7 @@ load_application:       True
               <div id="settings" class="bitex-view">
                 <!-- .page__head -->
                 <header class="page__head section-title">
-                  <h1 class="page__title h2 bitex-view-title">{% t views.settings.title %}</h1>
+                  <h1 class="page__title h2 bitex-view-title">设置</h1>
                 </header>
                 <!-- /.page__head -->
 
@@ -1035,7 +1280,7 @@ load_application:       True
                 <!-- .page__head -->
                 <header class="page__head section-title">
                     <h1 class="page__title h2 bitex-view-title">
-                        <i class="glyphicon glyphicon-check"></i> {% t views.verification.title %}
+                        <i class="glyphicon glyphicon-check"></i> 验证我的账户
                     </h1>
                 </header>
                 <!-- /.page__head -->
@@ -1117,4 +1362,173 @@ load_application:       True
   <!-- /.bitex-display-if-logged -->
 </div>
 <!-- /.container-fluid -->
+
+
+
+
+  <!-- .foot -->
+  <footer class="foot">
+    <!-- .wrapper -->
+    <div class="container">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="row">
+            <div class="col-sm-4">
+                <h5>Company</h5>
+                <ul>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="http://www.foxbit.com.br/grafico/" target="_blank">Chart</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="col-sm-4">
+                <h5>Platform</h5>
+                <ul>
+                    
+                    <li>
+                        <a href="" data-switch-view="admin">admin</a>
+                    </li>
+                    <li>
+                        <a href="" data-switch-view="themes">Themes</a>
+                    </li>
+                    <li>
+                        Latency: <span class="bitex-model" data-model-key="latency">0</span> ms
+                    </li>
+                    
+                    <li>
+                        Version: d5fcf02
+                    </li>
+                    <li>
+                        <a href="https://github.com/blinktrade/" target="_blank">Proudly 100% open source <span class="bitex-model" data-model-key="JSVersion"></span></a>
+                    </li>
+                    <li>
+                        <a href="http://nytm.org/made-in-nyc/" target="_blank">Made with <span style="color: #d11f0d;font-size: 19px;">♥</span> in NYC</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-4">
+                <h5></h5>
+                <ul>
+                    <li>
+                        <a href="#" data-switch-view="api">API </a>
+                    </li>
+                    <li>
+                        <a href="" data-switch-view="faq">建议和问题</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row center">
+            <hr>
+            <a href="http://blinktrade.com/" target="_blank">© 2014 BlinkTrade Inc</a>
+        </div>
+        <div class="row foot-social">
+            
+            <div class="col-sm-2 col-sm-offset-2">
+                <div class="social-button">
+                    <h3>
+                        <a href="https://www.facebook.com/bitinvestbr/?fref=ts" target="_blank">
+                            <i class="fa fa-facebook-official"></i>
+                        </a>
+                    </h3>
+                </div>
+            </div>
+            
+            
+            <div class="col-sm-2">
+                <div class="social-button">
+                    <h3>
+                        <a href="https://twitter.com/BitinvestBR" target="_blank">
+                            <i class="fa fa fa-twitter-square"></i>
+                        </a>
+                    </h3>
+                </div>
+            </div>
+            
+            
+            <div class="col-sm-2">
+                <div class="social-button">
+                    <h3>
+                        <a href="https://plus.google.com/+BitinvestBr/videos" target="_blank">
+                            <i class="fa fa fa-google-plus-square"></i>
+                        </a>
+                    </h3>
+                </div>
+            </div>
+            
+            
+            <div class="col-sm-2">
+                <div class="social-button">
+                    <h3>
+                        <a href="https://www.youtube.com/channel/UCn01xX42fkwaYTJPc87SJkQ" target="_blank">
+                            <i class="fa fa-youtube-play"></i>
+                        </a>
+                    </h3>
+                </div>
+            </div>
+            
+        </div>
+      </div>
+    </div>
+    <!-- /.wrapper -->
+  </footer>
+  <!-- /.foot -->
+
+  <div id="id_notifications" class="notifications top-right" style="z-index: 9000;"></div>
+
+  
+  <script data-cfasync="false" type="text/javascript">
+    var _app;  // global application object
+    (function(){
+      var broker_id = 4;
+      var country_code = "BR";
+      var blinktrade_api = "api.testnet.blinktrade.com";
+      var symbol = "BTCUSD";
+
+      var remittance_box = { 'BRL':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['Dólar Bitcoin',      'BRL', 'BLINK_BTCBRL_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCBRL_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID'  ], ['Dólar Turismo',      'BRL', 'UOL_USDBRT_BEST_BID / 100000000', 'UOL_USDBRT_BEST_ASK / 100000000' ] ], 'USD':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['KrakenUSD',          'USD', 'KRAKEN_BTCUSD_BEST_BID / 100000000', 'KRAKEN_BTCUSD_BEST_ASK / 100000000'  ], ['itBitUSD',           'USD', 'ITBIT_BTCUSD_BEST_BID / 100000000', 'ITBIT_BTCUSD_BEST_ASK / 100000000'  ] ], 'VEF':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCVEF_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCVEF_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ], ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'CLP':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCCLP_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ] , ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'VND':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> VND',  'VND', 'BLINK_BTCVND_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCPKR_BEST_ASK /  BITFINEX_BTCVND_BEST_BID' ] ], 'PKR':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> PKR',  'PKR', 'BLINK_BTCPKR_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCPKR_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] ] };
+
+      _app = new BlinkTradeApp(broker_id, remittance_box, country_code, symbol);
+      _app.run(blinktrade_api);
+    })();
+  </script>
+  
+
+  
+  <script data-cfasync="false" type="text/javascript">
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', '_gat');
+
+    _gat('create', 'UA-57478613-1', 'auto');
+    _gat('send', 'pageview');
+  </script>
+  
+
+  
+  <!--Start of Zopim Live Chat Script-->
+  <script data-cfasync="false" type="text/javascript">
+    window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+        d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+        _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+      $.src='https://v2.zopim.com/?2ZQbAVSILzBFbO31Z6EletdDQaW7H9xj';z.t=+new Date;$.
+          type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+  </script>
+  <!--End of Zopim Live Chat Script-->
+  
+
+  </body>
+</html>
 
